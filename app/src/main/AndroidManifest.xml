@@ -13,13 +13,8 @@
             android:name=".GameResult"
             android:exported="false" />
         <activity
-            android:name=".ResultCheck"
-            android:exported="false" />
-        <activity
             android:name=".GameScreen"
-            android:exported="false" />
-        <activity
-            android:name=".Popup"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

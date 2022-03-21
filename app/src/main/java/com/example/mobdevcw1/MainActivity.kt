@@ -13,13 +13,13 @@ class MainActivity : AppCompatActivity() {
         val aboutbtn = findViewById<Button>(R.id.about_btn)
         val newgamebtn = findViewById<Button>(R.id.newgame_btn)
 
-        aboutbtn.setOnClickListener{
+        // popup msg when clicking about button
+        aboutbtn.setOnClickListener {
             var dialog = Popup()
-
-            dialog.show(supportFragmentManager,"customDialog")
+            dialog.show(supportFragmentManager, "customDialog")
         }
-
-        newgamebtn.setOnClickListener{
+        // start new game
+        newgamebtn.setOnClickListener {
             val newGameIntent = Intent(this, GameScreen::class.java)
             startActivity(newGameIntent)
         }

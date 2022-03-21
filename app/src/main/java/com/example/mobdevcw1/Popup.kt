@@ -13,13 +13,13 @@ class Popup: DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
 
-    ): View? {
-        var rootview: View = inflater.inflate(R.layout.activity_popup,container,false)
-        var okBTN: Button = rootview.findViewById(R.id.ok_button)
+    ): View {
+        val rootView: View = inflater.inflate(R.layout.activity_popup,container,false)
+        val okBTN: Button = rootView.findViewById(R.id.ok_button)
 
         okBTN.setOnClickListener{
             dismiss()
         }
-        return rootview
+        return rootView
     }
 }
