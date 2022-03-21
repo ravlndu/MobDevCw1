@@ -19,8 +19,8 @@ class GameScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_screen)
-        var currentTime = 60
-        val timeInMills: Long = 200000
+        var currentTime = 50
+        val timeInMills: Long = 300000
         var tempScore = 0
         var finalWins = 0
         var finalLost = 0
